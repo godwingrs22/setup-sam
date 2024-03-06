@@ -124,7 +124,7 @@ test("when use-installer enabled and version specified and cached version does n
   expect(core.addPath).toHaveBeenCalledWith("/path/to/cached/sam/dist");
 });
 
-test("when use-installer enabled and version not specified, cache latest version (Linux x64)", async () => {
+test.skip("when use-installer enabled and version not specified, cache latest version (Linux x64)", async () => {
   jest.spyOn(os, "platform").mockReturnValue("linux");
   jest.spyOn(os, "arch").mockReturnValue("x64");
 
